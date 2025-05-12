@@ -15,10 +15,13 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
-header h1 {
+header h1, .textoInfo {
     margin: 0;
 }
 
+.mainTT, h2{
+    text-align: center;
+}
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -34,12 +37,12 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
+main, .contentSector {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
     background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.432);
 }
 
 img {
@@ -71,3 +74,27 @@ footer {
     font-size: 25px;
     font-weight: bolder;
 }
+.contentInfo{
+    text-align: justify;
+}
+.textimg {
+    display: flex;       /* Activa flexbox */
+    align-items: center; /* Centra verticalmente la imagen con el texto */
+    gap: 10px;          /* Espacio entre imagen y texto */
+  }
+  
+  .imagen {
+    width: 70px;        /* Ajusta el tamaño de la imagen */
+    height: auto;       /* Mantiene la proporción */
+    flex-shrink: 0;     /* Evita que la imagen se encoja */
+  }
+
+  .textoInfo{
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  .textoCenter{
+    text-align: center;
+    margin-left: 5px;
+  }
